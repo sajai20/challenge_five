@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button class="btn_again" id="clear">clear</button>
+    <div class="container">
+        <h1>Student Mark calculator</h1>
+        <label for="number">ENTER THE NUMBER OF STUDENTS</label>
+        <input type="number" id="number" placeholder="number" />
+        <input type="button" value="conform" class="form-button" onclick="ok()" />
+
+        <div class="form-group">
+            <!-- option for taking the input -->
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="name" id="name" />
+        </div>
+        <div class="form-group">
+            <label for="unittest">UnitTest</label>
+            <input type="number" class="form-control" placeholder="out of 100" id="unittest" />
+        </div>
+        <div class="form-group">
+            <label for="prefinal">PreFinal</label>
+            <input type="number" class="form-control" placeholder="out of 100" id="prefinal" />
+        </div>
+        <div class="form-group">
+            <label for="final">Final</label>
+            <input type="number" class="form-control" placeholder="out of 100" id="final" />
+        </div>
+        <div>
+            <input type="button" value="add" class="form-button" onclick="add()" />
+            <input type="button" value="view" class="form-button" onclick="view()" />
+            <input type="button" value="highmark" class="form-button" onclick="highmark()" />
+        </div>
+        <p id="para">
+        </p>
+        <script src="./script.js"></script>
+</body>
+
+</html>
